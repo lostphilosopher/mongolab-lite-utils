@@ -11,6 +11,9 @@ MongolabLiteUtils Usage
 use MongolabLiteUtils\MongolabLiteUtils;
 
 $mongo = new MongolabLiteUtils(getenv('MONGOLAB_URI'));
+
 $collection = $mongo->getCollection('collection_name');		    
+
 $collection->insert($record);
+
 $data = $collection->find();
